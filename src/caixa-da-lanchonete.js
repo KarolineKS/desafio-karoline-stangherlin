@@ -1,9 +1,7 @@
 class CaixaDaLanchonete {
-
-    calcularValorDaCompra(metodoDePagamento, itens) {
-        return "";
-    }
-
+  calcularValorDaCompra(metodoDePagamento, itens) {
+    return '';
+  }
 }
 
 export { CaixaDaLanchonete };
