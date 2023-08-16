@@ -23,7 +23,7 @@ class Pagamento {
       this.#metodoDePagamento.includes(metodoDePagamento);
 
     if (!validaMetodoPagamento) {
-      throw new Error('Método de pagamento inválido');
+      throw new Error('Forma de pagamento inválida!');
     }
   }
 
@@ -35,7 +35,7 @@ class Pagamento {
     }
 
     if (metodoDePagamento === 'credito') {
-      return (valorTotal * 1.05).toFixed(2);
+      return (valorTotal * 1.03).toFixed(2);
     }
 
     return valorTotal.toFixed(2);
