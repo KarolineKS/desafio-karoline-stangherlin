@@ -46,7 +46,7 @@ export { Item };
 
 // testes manuais da classe Item
 
-const cafe = new Item('cafe', 'Café', 7.0, 'principal')
+/* const cafe = new Item('cafe', 'Café', 7.0, 'principal')
 const chantily = new Item('chantily', 'Chantily', 3.0, 'adicional', 'cafe')
 
 console.log(cafe.tipo);
@@ -54,4 +54,4 @@ console.log(cafe.valor);
 console.log(chantily.principalRequerido);
 
 cafe.valor = 8.0;
-console.log(cafe.valor);
+console.log(cafe.valor); */
