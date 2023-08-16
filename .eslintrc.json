@@ -15,6 +15,7 @@
   ],
 
   "rules": {
+      "parser": "@babel/eslint-parser",
       "class-methods-use-this": "off",
       "no-underscore-dangle": "off",
       "import/prefer-default-export": "off",
