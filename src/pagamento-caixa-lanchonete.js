@@ -19,8 +19,8 @@ class Pagamento {
   }
 
   #verificaPagamento(metodoDePagamento) {
-    const validaMetodoPagamento = this.#metodoDePagamento
-      .includes(metodoDePagamento);
+    const validaMetodoPagamento =
+      this.#metodoDePagamento.includes(metodoDePagamento);
 
     if (!validaMetodoPagamento) {
       throw new Error('Método de pagamento inválido');
