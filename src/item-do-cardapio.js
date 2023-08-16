@@ -1,9 +1,9 @@
 class Item {
-  #codigo; 
-  #descricao; 
-  #valor; 
-  #tipo; 
-  #principalRequerido; 
+  #codigo;
+  #descricao;
+  #valor;
+  #tipo;
+  #principalRequerido;
 
   constructor(codigo, descricao, valor, tipo, principalRequerido) {
     this.#codigo = codigo;
