@@ -25,11 +25,4 @@ class CaixaDaLanchonete {
   }
 }
 
-const caixa = new CaixaDaLanchonete().calcularValorDaCompra('dinheiro', [
-  'chantily,1',
-  'cafe,2',
-]);
-
-console.log('caixa', caixa);
-
 export { CaixaDaLanchonete };

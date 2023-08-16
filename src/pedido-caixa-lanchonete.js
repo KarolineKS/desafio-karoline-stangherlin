@@ -49,10 +49,3 @@ class Pedido {
 }
 
 export { Pedido };
-
-// Testes manuais para verificar o funcionamento da classe Pedido
-
-/* const pedido = new Pedido();
-pedido.adicionarItensCarrinho(['cafe,2']);
-console.log(pedido.calcularValorPedido());
- */

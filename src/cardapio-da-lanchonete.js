@@ -2,14 +2,19 @@ import { Item } from './item-do-cardapio.js';
 import { cardapioData } from './data/cardapio-data.js';
 
 class Cardapio {
-  #cardapio = [] ;
+  #cardapio = [];
 
   constructor() {
-    this.#cardapio = cardapioData.map((item) => new Item(item.codigo,
-      item.descricao,
-      item.valor,
-      item.tipo,
-      item.principalRequerido));
+    this.#cardapio = cardapioData.map(
+      (item) =>
+        new Item(
+          item.codigo,
+          item.descricao,
+          item.valor,
+          item.tipo,
+          item.principalRequerido
+        )
+    );
   }
 
   get gerarCardapio() {
@@ -32,12 +37,14 @@ class Cardapio {
       item.tipo,
       item.principalRequerido
     );
-  
-    const itemExistente = this.#cardapio.find((produto) => produto.codigo === novoItem.codigo);
+
+    const itemExistente = this.#cardapio.find(
+      (produto) => produto.codigo === novoItem.codigo
+    );
     if (itemExistente) {
       throw new Error('Item já existente!');
     }
-  
+
     this.#cardapio.push(novoItem);
     return 'Item adicionado com sucesso!';
   }
@@ -66,10 +73,10 @@ class Cardapio {
   modificarItem(codigo, item) {
     const itemExistente = this.buscarItem(codigo);
 
-    if(!itemExistente) {
+    if (!itemExistente) {
       throw new Error('Item inválido!');
     }
-    const {descricao, valor} = item;
+    const { descricao, valor } = item;
 
     itemExistente.descricao = descricao;
     itemExistente.valor = valor;
@@ -79,22 +86,3 @@ class Cardapio {
 }
 
 export { Cardapio };
-
-// Testes manuais da classe Cardapio
-
-/* const cardapio = new Cardapio();
-console.log("cardapio antigo",cardapio.gerarCardapio);
-
-cardapio.adicionarItem({
-  codigo: 'pizza',
-  descricao: 'Pizza',
-  valor: 10.00,
-  tipo: 'principal',
-})
-
-console.log(cardapio.gerarCardapio);
-
-cardapio.removerItem('pizza');
-console.log(cardapio.gerarCardapio);
-
-console.log("buscar item",cardapio.buscarItem('cafe')); */
