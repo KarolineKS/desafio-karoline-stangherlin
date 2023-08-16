@@ -30,7 +30,7 @@ class Pedido {
 
   #verificarItemExtra(itensInfo) {
     if (itensInfo.tipo === 'extra') {
-      const itemPrincipal = this.itensCarrinho.find(
+      const itemPrincipal = this.#itensCarrinho.find(
         (produto) => produto.codigo === itensInfo.principalRequerido
       );
 
@@ -43,7 +43,7 @@ class Pedido {
   calcularValorPedido() {
     return this.#itensCarrinho.reduce((acc, item) => {
       const { valor, quantidade } = item;
-      return (acc + Number(valor) * quantidade).toFixed(2);
+      return acc + Number(valor) * quantidade;
     }, 0);
   }
 }
