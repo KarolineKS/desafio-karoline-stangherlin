@@ -40,7 +40,19 @@
         <section class="cart">
           <ol class="cart__items"></ol>
           <div class="container-btn-price">
-            <button class="btn-esvaziar">Esvaziar pedidos</button>
+            <div class="container-btn">
+              <select
+                class="btn metodo-pagamento"
+                name="pagamento"
+                id="pagamento"
+              >
+                <option value="dinheiro">Dinheiro</option>
+                <option value="credito">Crédito</option>
+                <option value="debito">Débito</option>
+              </select>
+              <button class="btn btn__somar">Somar pedidos</button>
+              <button class="btn btn__limpar">Limpar Carrinho</button>
+            </div>
             <div class="container-total">
               <p class="total__title">Total:</p>
               <p class="total__price">R$ 0,00</p>
@@ -50,5 +62,8 @@
       </section>
       <script type="module" src="script.js"></script>
     </main>
+    <footer class="footer">
+      <p class="footer__text">Desenvolvido por Karoline Kohls Stangherlin</p>
+    </footer>
   </body>
 </html>
