@@ -1,13 +1,13 @@
 const cardapioData = [
   {
     codigo: 'cafe',
-    descricão: 'Café',
+    descricao: 'Café',
     valor: 3.00,
     tipo: 'principal',
   },
   {
     codigo: 'chantily',
-    descricão: 'Chantilly (extra do Café)',
+    descricao: 'Chantily (extra do Café)',
     valor: 1.50,
     tipo: 'extra',
     principalRequerido: 'cafe',

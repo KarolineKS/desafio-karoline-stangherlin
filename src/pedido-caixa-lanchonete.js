@@ -7,6 +7,10 @@ class Pedido {
     this.#itensCarrinho = [];
   }
 
+  get mostrarItensCarrinho() {
+    return this.#itensCarrinho;
+  }
+
   adicionarItensCarrinho(itens) {
     if (!itens || itens.length === 0) {
       throw new Error('Não há itens no carrinho de compra!');

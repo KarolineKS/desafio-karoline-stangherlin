@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lanchonete DB</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-title">
+        <p class="title">
+          <span>💜</span> Caixa da Lanchonete DB <span>💜</span>
+        </p>
+      </div>
+      <i
+        class="fi fi-rs-hamburger-soda"
+        style="font-size: 45px; color: white"
+      ></i>
+      <div class="container-cartTitle">
+        <p class="cart__title">Pedidos <span>😋</span></p>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <section class="items">
+          <div class="items__list"></div>
+        </section>
+        <section class="cart">
+          <ol class="cart__items"></ol>
+          <button class="btn-esvaziar">Esvaziar pedidos</button>
+          <div class="container-total">
+            <p class="total__title">Total:</p>
+            <p class="total__price">R$ 0,00</p>
+          </div>
+        </section>
+      </section>
+      <script type="module" src="script.js"></script>
+    </main>
+  </body>
+</html>
